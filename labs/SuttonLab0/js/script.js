@@ -93,6 +93,7 @@ class GameEngine {
   }
 
   scrambleButtons(count) {
+     this.clearButtons();
     this.counter = 0;
     let timer = setInterval(() => { //utilized gemini to learn about setInterval and clearInterval
       //utilized gemini to use arrow notation to keep it to its outer scope of a GameEngine object
@@ -105,7 +106,7 @@ class GameEngine {
 
       if (this.counter >= count) {
         clearInterval(timer);
-        this.clearButtons();
+       
       }
     }, 2000);
   }
@@ -162,8 +163,7 @@ class UserInterface {
       let count = parseInt(input.value);
       if (count >= 3 && count <= 7) {
         this.engine.runGame(count);
-        this.engine.initButtons(count);
-        this.engine.scrambleButtons(count);
+     
       } else {
         alert(messages.RANGE);
       }
