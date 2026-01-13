@@ -1,0 +1,28 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+#app {
+    margin-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* absolute position is REQUIRED for the scrambling to work */
+    position: absolute; 
+}
+
+
+input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+#app > button {  /*  > = child selector, all the buttons within app*/
+    position: static; /* The "Go" button shouldn't move around while the boxes do    */
+    
+}
