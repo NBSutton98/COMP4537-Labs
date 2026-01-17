@@ -1,0 +1,63 @@
+/* Global Font and Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Header Alignment */
+h1, h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* The Container for all the notes */
+#storedNotes {
+    display: flex;
+    flex-wrap: wrap; /* Allows notes to wrap to the next line */
+    gap: 20px;       /* Space between notes */
+    justify-content: center; /* Centers notes in the middle */
+    margin-top: 20px;
+}
+
+/* Individual Note styling */
+.note-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    height: 250px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The text area inside the note */
+textarea {
+    width: 90%;
+    height: 150px;
+    resize: none; /* Stops user from breaking the layout */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: inherit;
+}
+
+/* Buttons (Generic) */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Specific Button Colors */
+#writerBtn, #addBtn {
+    background-color: #007bff;
+}

@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <div id="saveTime" style="text-align: right;"></div>
+
+    <div id="storedNotes"></div>
+
+    <button onclick="createNote()" id="addBtn"></button>
+    
+    <button onclick="location.href='index.html'" id="backBtn"></button>
+
+    <script src="lang/messages/en/user.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        document.getElementById("addBtn").innerText = messages.ADD;
+        document.getElementById("backBtn").innerText = messages.BACK;
+    </script>
+</body>
